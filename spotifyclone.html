@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap'); */
+        body{ 
+            background-color: antiquewhite;}
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            nav{
+                font-family:Georgia, 'Times New Roman', Times, serif
+            }
+            nav ul {
+                align-items: center;
+                display: flex;
+                list-style-type: none;
+                height: 44px;
+                background-color: black;
+                color: white;
+            }
+            .abc{
+                display: flex;
+                align-items: center;
+               
+                font-size: 1.2rem;
+                
+            }
+            .abc img{
+                padding: 0 8px;
+                width: 50px;
+            }
+            nav ul li{
+                
+                padding: 0px 13px;
+            }
+
+            /* css for bottom and container */
+
+            .container{
+                min-height: 70vh;
+                background-color: black;
+                color: white;
+                display: flex;
+               
+                margin: 23px auto;
+                width: 60%;
+                border-radius: 12px;
+
+                /* background-image: url('https://raptrill.com/wp-content/uploads/2022/06/download-1-1024x683.jpg'); */
+
+           
+                
+               
+            }
+            .container h2{
+                /* color: black; */
+                /* padding-top: 12px;
+                padding-left: 16px; */
+            }
+           
+            .bottom{
+                position: sticky;
+                height: 90px;
+                bottom: 10px;
+                background-color: black;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            #myProgressBar{
+                width: 75vw;
+            }
+            .icons{
+                margin: 10px;
+            }
+            .icons i{
+                cursor: pointer;
+            }
+            .songitem  {
+                
+display: flex;
+background-color: white;
+width: 90%;
+color: black;
+margin: 17px 0;
+align-items: center;
+border-radius: 9px;
+            }
+
+            .songitem img{
+                width: 60px;
+                margin: 0 23px;
+                
+            }
+            .songlistplay  i {
+                cursor: pointer;
+            }
+.songlistplay .time{
+    font-size: 13px;
+}
+.songlistplay i{
+    font-size: 13px;
+}
+
+.songinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.songinfo img {
+    width: 27px;    
+    height: 20px;
+    position: absolute;
+    left: 559px;
+
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+#myProgressBar{
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li class="abc"> <img src="https://w7.pngwing.com/pngs/327/729/png-transparent-spotify-playlist-podcast-apps-miscellaneous-logo-apple-music-thumbnail.png" alt="Spotify">  Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+
+           
+        </ul>
+    </nav>
+<div class="container">
+    <div class="songlist">
+    <h2>Explore Endless <br>Music Collections</h2>
+    <div class="songitem">
+        <img src="https://i.ytimg.com/vi/B7SkAq_94J8/maxresdefault.jpg" alt="1"> 
+        <span>pehla pyaar kabir-Singh</span>
+       
+      <span class="songlistplay"><span class="time">04:33</span> <i class="far fa-play-circle  "></i></span>
+    </div>
+
+    <div class="songitem">
+        <img src="https://i.ytimg.com/vi/pu2XHG_ds60/maxresdefault.jpg" alt="1"> 
+        <span>Mere sohneya Kabir-Singh</span>
+       
+      <span class="songlistplay"><span class="time">04:33</span> <i class="far fa-play-circle  "></i></span>
+
+    </div>
+
+    <div class="songitem">
+        <img src="https://i0.wp.com/lyricsted.com/wp-content/uploads/2022/05/Ranjha-Lyrics.jpg" alt="1"> 
+        <span>Yeh Aiana kabir-Singh</span>
+       
+      <span class="songlistplay"><span class="time" >04:33</span> <i class="far fa-play-circle  "></i></span>
+
+    </div>
+    <div class="songitem">
+        <img src="https://i.ytimg.com/vi/MJ6i9bLLoeo/maxresdefault.jpg" alt="1"> 
+        <span>Har Gully Mein Dhoni Hai</span>
+       
+      <span class="songlistplay"><span class="time">04:33</span> <i class="far fa-play-circle  "></i></span>
+
+    </div>
+
+    <div class="songitem">
+        <img src="https://cdndailyexcelsior.b-cdn.net/wp-content/uploads/2019/06/Kabir-Singh.jpg" alt="1"> 
+        <span>Bekhayali  kabir-Singh</span>
+       
+      <span class="songlistplay"><span class="time">05:30</span> <i class="far fa-play-circle  "></i></span>
+
+    </div>
+    <div class="songitem">
+        <img src="https://i.ytimg.com/vi/_P9YXESg5Es/maxresdefault.jpg" alt="1"> 
+        <span>tujhe kitna chahne lage</span>
+       
+      <span class="songlistplay"><span class="time" >04:33</span> <i class="far fa-play-circle  "></i></span>
+
+    </div>
+    <div class="songitem">
+        <img src="https://i.ytimg.com/vi/UBBHpoW3AKA/maxresdefault.jpg" alt="1"> 
+        <span>besabriyaan Ms  Dhoni</span>
+       
+      <span class="songlistplay"><span class="time" >04:33</span> <i class="far fa-play-circle  "></i></span>
+
+    </div>
+    </div>
+
+    <div>
+       
+    </div>
+    <div class="songBanner"></div>
+</div>
+
+<div class="bottom">
+    <input type="range" name="range" id="myProgressBar" min="0" max="100">
+   <div class="icons">
+    <i class="fa-solid fa-2x  fa-backward"></i>
+    <i class="far fa-2x fa-play-circle  "></i>
+    <i class="fa-solid fa-2x   fa-forward"></i>
+   </div>
+
+   <div class="songinfo">
+<img src="https://i.gifer.com/origin/78/78270fde30bdca8fec52f86bfa7cab0c_w200.gif"  width="32px">pehla pyaar kabir-Singh
+   </div>
+</div>
+
+    <script src="https://kit.fontawesome.com/124cf2bd5a.js" crossorigin="anonymous"></script>
+<script>
+console.log('welcome to spotify clone');
+let audioElement= new Audio('E:\complete web dev bootcamp\songs\ 1.mp3');
+audioElement.play();
+
+
+
+</script>
+</body>
+</html>
